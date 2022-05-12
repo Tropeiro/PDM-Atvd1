@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="271dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="monospace"
+        android:text="Sorteio de Prêmios"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_premios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_premios"
+        android:layout_width="291dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="88dp"
+        android:text="R$ 1.000 - R$ 2.000 - R$ 3.000     Carro 0km - Motocicleta - Casa    Viagem - Smartphone - Apartamento"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSorteio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo" />
+
+    <Button
+        android:id="@+id/btnSorteio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="111dp"
+        android:onClick="Premiacao"
+        android:text="Sortear"
+        app:layout_constraintBottom_toTopOf="@+id/txt_sorteado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_premios" />
+
+    <TextView
+        android:id="@+id/txt_sorteado"
+        android:layout_width="229dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="246dp"
+        android:text="Nenhum prêmio sorteado"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSorteio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
