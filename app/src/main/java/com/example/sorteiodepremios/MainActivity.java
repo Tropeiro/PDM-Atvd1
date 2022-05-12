@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnSorteio = findViewById(R.id.btnSorteio);
+        btnSorteio =  findViewById(R.id.btnSorteio);
         txt_sorteado = findViewById(R.id.txt_sorteado);
     }
 
